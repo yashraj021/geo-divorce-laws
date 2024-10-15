@@ -12,11 +12,11 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
 
 const colorScale = scaleLinear()
   .domain([0, 1])
-  .range(["#E6F3FF", "#90CDF4"]); // Light blue to slightly darker blue
+  .range(["#FFE0B2", "#FFAB40"]); // Light blue to slightly darker blue
 
 const selectedColorScale = scaleLinear()
   .domain([0, 1])
-  .range(["#FFE0B2", "#FFAB40"]); // Light orange to slightly darker orange
+  .range(["#E6F3FF", "#90CDF4"]); // Light orange to slightly darker orange
 
 const topics = [
   { key: 'marriageRegistration', icon: FileText, color: 'blue' },
@@ -121,7 +121,7 @@ function DivorceMap() {
                         strokeWidth={0.5}
                         style={{
                           default: { outline: "none" },
-                          hover: { outline: "none", fill: isRelevant ? (isSelected ? "#FFCC80" : "#64B5F6") : "#E0E0E0" },
+                          hover: { outline: "none", fill: isRelevant ? (isSelected ? "#E0E0E0" : "#64B5F6") : "#E0E0E0" },
                           pressed: { outline: "none" },
                         }}
                         onClick={() => handleCountryClick(countryName)}
