@@ -80,16 +80,21 @@ function DivorceMap() {
   };
 
   return (
-    <div className="w-full h-screen bg-blue-50 p-4 md:p-8 flex flex-col">
+    <div className="w-full h-screen bg-blue-50 p-1 md:p-8 flex flex-col">
       <header className="mb-8 flex flex-col items-center">
         <div className="flex items-center mb-2">
-          <Scale size={36} className="text-blue-600 mr-2" />
-          <h1 className="text-3xl md:text-4xl font-bold text-blue-800">
-            Geographical Divorce Laws
-          </h1>
+          <Scale size={64} className="text-blue-600 mr-8" />
+          <div className='flex flex-col items-center'>
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-800">
+              Transnational Matrimony Tracker
+            </h1>
+            <h3 className='text-gray-600 items-center'>
+              For Overseas Citizens/ Non Residents
+            </h3>
+          </div>
         </div>
-        <p className="text-blue-600 text-center max-w-2xl">
-          Explore divorce laws across different countries. Click on a highlighted country to learn more.
+        <p className="text-blue-600 text-center max-w-2xl translate-x-10 mt-4">
+         Explore Matrimonial laws for overseas citizens/ non residents across different countries
         </p>
       </header>
       <div className="flex-grow relative bg-white rounded-lg shadow-md overflow-hidden">
