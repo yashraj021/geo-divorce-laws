@@ -101,7 +101,7 @@ function DivorceMap() {
             // backgroundImage: `url(${gif})`,
             // backgroundSize: "cover",  
             // backgroundPosition: "center",  
-            background: '#99eaff'
+            background: '#26d3ff'
           }}
         >
           <ComposableMap projection="geoMercator" projectionConfig={{ scale: 220 }}>
