@@ -16,7 +16,7 @@ const colorScale = scaleLinear()
 
 const selectedColorScale = scaleLinear()
   .domain([0, 1])
-  .range(["#E6F3FF", "#90CDF4"]); // Light orange to slightly darker orange
+  .range(["#E6F3FF", "#079bfa"]); // Light orange to slightly darker orange
 
 const topics = [
   { key: 'marriageRegistration', icon: FileText, color: 'blue' },
@@ -98,9 +98,10 @@ function DivorceMap() {
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           className="w-full h-full"
           style={{
-            backgroundImage: `url(${gif})`, // Add your ocean image here
-            backgroundSize: "cover",  // Cover the container fully
-            backgroundPosition: "center",  // Center the background image
+            // backgroundImage: `url(${gif})`,
+            // backgroundSize: "cover",  
+            // backgroundPosition: "center",  
+            background: '#99eaff'
           }}
         >
           <ComposableMap projection="geoMercator" projectionConfig={{ scale: 220 }}>
@@ -121,7 +122,7 @@ function DivorceMap() {
                         strokeWidth={0.5}
                         style={{
                           default: { outline: "none" },
-                          hover: { outline: "none", fill: isRelevant ? (isSelected ? "#E0E0E0" : "#64B5F6") : "#E0E0E0" },
+                          hover: { outline: "none", fill: isRelevant ? (isSelected ? "#4db7fa" : "#64B5F6") : "#E0E0E0" },
                           pressed: { outline: "none" },
                         }}
                         onClick={() => handleCountryClick(countryName)}
